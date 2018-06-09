@@ -1,0 +1,81 @@
+
+.border {
+    border: 1px solid black;
+}
+
+/*############
+### LAYOUT ###
+############*/
+
+.flex-cont {
+    display: flex;
+}
+
+.column-dir {
+    flex-direction: column;
+}
+
+.space-betw {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-cent {
+    align-items: center;
+}
+
+.just-cent {
+    justify-content: center;
+}
+
+.flex {
+    flex: 1;
+}
+
+/*############
+# TYPOGRAPHY #
+############*/
+
+
+
+/*############
+### HEADER ###
+############*/
+
+.header {
+
+}
+
+/*############
+##  FOOTER  ##
+############*/
+
+.footer {
+
+}
+
+
+/*################
+### NAVIGATION ###
+################*/
+
+
+/*#################
+###  MAIN HOME  ###
+#################*/
+
+.main-home {
+
+}
+
+
+
+/*#################
+###  MAIN ****next page****  ###
+#################*/
+
+
+
