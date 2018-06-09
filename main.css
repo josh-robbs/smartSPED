@@ -34,10 +34,50 @@
 .flex {
     flex: 1;
 }
+.flextwo {
+    flex:2;
+}
+
+.margin {
+    margin: 0 8vw;
+}
+
 
 /*############
 # TYPOGRAPHY #
 ############*/
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    padding: .5vw;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.small {
+    font-size: 12px;
+    font-style: italic;
+}
+
 
 
 
@@ -46,7 +86,75 @@
 ############*/
 
 .header {
+    border-bottom: solid 2px black;
+}
 
+.heroimg {
+    border-radius: 100%;
+    padding: 1vw;
+}
+
+/*############
+### SUB-HEADER ###
+############*/
+
+#userInfo {
+    width: 400px;
+    height: 100px;
+    margin: 1vw 0;
+    border-radius: 15px;
+    padding: 1vw;
+    background-color: thistle;
+    box-shadow: 3px 4px darkgray;
+    /* border: solid 1px gray; */
+}
+
+#userInfo img {
+    /* border: solid 1px gray; */
+    border-radius: 100%;
+    margin: 1vw;
+    box-shadow: 2px 2px darkgray;
+    /* border: solid 1px gray; */
+}
+
+/*############
+### STuDENT-PROFILE ###
+############*/
+
+.student-profile {
+    border-radius: 15px;
+    background-color: lightblue;
+    margin-bottom: 1vw;
+    box-shadow: 3px 4px darkgray;
+    /* border: solid 1px gray; */
+}
+
+.student-header {
+    margin: 0 400px 0 400px;
+}
+
+.student-header img {
+    border-radius: 100%;
+    margin: 1vw;
+    box-shadow: 2px 2px darkgray;
+    /* border: solid 1px gray; */
+}
+
+.student-info h2, .student-info p {
+    padding: .2vw;
+}
+
+.card {
+    padding: 2vw;
+    /* border: solid 1px darkgray; */
+    margin: 1vw;
+    background-color: snow;
+    border-radius: 15px;
+    box-shadow: 3px 4px gray;
+}
+
+.bottomCard {
+    height: 200px;
 }
 
 /*############
@@ -54,7 +162,7 @@
 ############*/
 
 .footer {
-
+    border-top: solid 2px black;
 }
 
 
@@ -62,6 +170,9 @@
 ### NAVIGATION ###
 ################*/
 
+.nav {
+    padding: .5vw; 
+}
 
 /*#################
 ###  MAIN HOME  ###
