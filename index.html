@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Taco!!</title>
+    <title>Smart SPED</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
 </head>
@@ -16,10 +17,9 @@
                 <h1>Smart SPED</h1>
             </div>
             <div class="flex-cont">
-                <a href="./" class="nav">Home</a>
-                <a href="" class="nav">Placeholder</a>
-                <a href="" class="nav">Placeholder</a>
-                <a href="" class="nav">Placeholder</a>
+                <a href="home.html" class="nav">Home</a>
+                <a href="about.html" class="nav">About</a>
+                <a href="contact.html" class="nav">Contact</a>
             </div>
         </div>
     </header>
@@ -27,37 +27,67 @@
     <main>
         <!--Sub-Header-->
         <div class="flex-cont space-betw margin align-cent">
-            <h2>IEP Dashboard</h2>
-                <div id="userInfo" class="flex-cont space-around align-cent">
-                    <img src="http://via.placeholder.com/100x100" alt="">
-                    <div class="flex-cont column-dir">
-                        <h3>Generic Role</h3>
-                        <p class="small">Permissions lorem ipsum lorem impsum</p>
-                    </div>
+            <div>
+                <h2>IEP Dashboard</h2>
+                <nav><a class="nav-location" href="home.html">Home</a> > <a class="nav-location" href="students.html">Students</a> > Bobby Blank</nav>
+            </div>
+            <div id="userInfo" class="flex-cont space-around align-cent">
+                <img src="http://via.placeholder.com/100x100" alt="">
+                <div class="flex-cont column-dir">
+                    <h4>Generic Role</h4>
+                    <p class="small">Permissions lorem ipsum lorem impsum</p>
+                    <p>Log Out</p>
                 </div>
+            </div>
         </div>
         <!--Student-Header-->
             <div class="student-profile margin">
                 <div class="flex-cont space-around align-cent student-header">
                     <img src="http://via.placeholder.com/200x200">
                     <div class="flex-cont column-dir student-info">
-                        <h2>Bobby Blank</h2>
-                        <p>Placeholder Diagnoses</p>
-                        <p>Student Grade, Bio</p>
+                        <h3>Bobby Blank</h3>
+                        <p>Autism Spectrum Disorders</p>
+                        <p>8th Grade</p>
+                        <p id="expandBioTray"><i class="fas fa-plus-circle"></i> Student Background</p>
                     </div>
+                </div>
+                <div id="bioCard" class="student-header card hidden">
+                    <h4>Student Strengths, Preferences, Interests</h4>
+                    <p>What are the student’s education/developmental strengths, interest areas, 
+                        significant personal attributes and personal accomplishments as indicated 
+                        by formal or informal assessment? Be sure to include specific feedback 
+                        from the student.</p>
+                    <br>
+                    <a href="">IDEA 300.324(a)(i) strengths of child</a>
+                    <br>
+                    <br>
+                    <a href="">IDEA 300.321(b)(2) preferences and interests</a>
+                    <br>
+                    <br>
+                    <p>Student is an 8th grade boy at Middle School. He enjoys video games, swimming, sports and reading, electronic music, and has a
+                        good voice. He has a close relationship with his parents who love him very much and will support his education in any way possible.
+                        Student has a funny sense of humor and when he is watching funny videos... his laugh is infectious and it brightens the entire room.
+                        He is sincerely caring and empathetic towards others, and has a strong sense of right and wrong. He will often check in with a student
+                        if they are having a hard time. Student demonstrates excellent manners and respect for both people and belongings, and shows this in
+                        particular by asking if he can use items. At times, Student will appear to not be paying attention, but he has a keen ability to fidget
+                        and pay attention at the same time. He is an excellent self-advocate as evidenced by his introduction letter shared with his 8th grade
+                        team. Student demonstrates strong memorization skills (e.g. repeating back large sections of dialogue from cartoons). In sum, these
+                        strengths, interests, personal attributes and personal accomplishments indicate that Student is a strong self-advocate, is an extremely
+                        empathetic and big-hearted young man, has a deep sense of right and wrong, and shows excellent manners and respect for both people
+                        and belongings.</p>
                 </div>
             <!--Student-Header Card Responsive if i could go part-->
                 <div class="flex-cont">
                     <div class="flex-cont column-dir left-column flex">
                         <div class="flex-cont flex column-dir card">
-                            <h2>Status <span class="small">last updated 6/8/18</span></h2>
+                            <h3>Status <span class="small">last updated 6/8/18</span></h3>
                             <ul class="to-do-list">
-                                <li>Progress Report Due 7/4/18</li>
+                                <li><a href="iepform.html">Progress Report</a> Due 7/4/18</li>
                                 <li>IEP Update 6/1/19</li>
                             </ul>
                         </div>
                         <div class="flex-cont flex column-dir card">
-                            <h2>Special Factors</h2>
+                            <h3>Special Factors</h3>
                                 <ul class="special-card">
                                     <li>The student exhibits behavior that requires a Behavior Intervention Plan. <a>300.324(1)(2)(i)</a></li>
                                     <li>The student needs Assistive Technology devices or services. <a>300.324(a)(2)(v)</a></li>
@@ -66,12 +96,12 @@
                         </div>
                         <div class="flex-cont flex column-dir card">
                             <div class="flex-cont space-betw align-cent">
-                                <h2>Latest Upates</h2>
+                                <h3>Latest Upates</h3>
                                 <button>Submit</button>
                             </div>
                             <div class="update-entry">
                                 <h5>Progress Update</h5>
-                                <h6>7 June 2018</h6>
+                                <h6 class="small">7 June 2018</h6>
                                 <p>One day this week he was pretty productive and almost finished the entire 1.3 practice sheet. 
                                     He needed to finish only four more problems for homework. This "hard work" only happened after 
                                     I asked him to leave my small group (1:5 ratio) because of whining too much. He apologized and 
@@ -79,20 +109,20 @@
                             </div>
                             <div class="update-entry">
                                 <h5>Example Disruptive Behavior</h5>
-                                <h6>22 May 2018</h6>
+                                <h6 class="small">22 May 2018</h6>
                                 <img src="http://via.placeholder.com/500x220" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="flex-cont column-dir right-column flex">
                         <div class="flex-cont flex column-dir card goal-card">
-                            <h2>Measurable Goal 1</h2>
+                            <h3>Measurable Goal 1</h3>
                             <p>Student will learn specific coping strategies (e.g. deep breathing, 
                                 check-in with trusted adult, problem-solving process, drawing, writing, 
                                 etc.) and apply them during stress-inducing situations in 50% of 
                                 opportunities given no more than one verbal prompt.</p>
                             <p>Other Stuff Drop Box</p>
-                            <h2>Measurable Goal 2</h2>
+                            <h3>Measurable Goal 2</h3>
                             <p>Given authentic or hypothetical situations, Student will 
                                 learn the problem-solving process (Identify the problem,
                                 individuals directly involved, generate alternative solutions,
@@ -102,7 +132,7 @@
                                 by successful task completion.</p>
                             <br>
                             <p>Other Stuff Drop Box</p>
-                            <h2>Measurable Goal 3</h2>
+                            <h3>Measurable Goal 3</h3>
                             <p>Student will increase his reading comprehension from the Zone 
                                 of Proximal Development 718 Lexile level to 800 Lexile level by 
                                 demonstrating persistence in reading a variety of texts including 
@@ -110,7 +140,7 @@
                                 on a norm referenced reading passage.</p>
                             <br>
                             <p>Other Stuff Drop Box</p>
-                            <h2>Measurable Goal 4</h2>
+                            <h3>Measurable Goal 4</h3>
                             <p>Student will independently solve multi-step word problems, by selecting 
                                 the correct operation(s) and solve accurately using a calculator with 
                                 80% accuracy.</p>
@@ -118,8 +148,37 @@
                             <p>Other Stuff Drop Box</p>
                         </div>
                         <div class="flex-cont flex column-dir card">
-                            <h2>column 1</h2>
-                            <p>Sed maximus ullamcorper scelerisque. Phasellus laoreet consequat sollicitudin. Aliquam luctus faucibus diam, sit amet lobortis augue porta quis. Nulla ullamcorper eros ac ultrices malesuada. Nulla semper viverra nunc vel laoreet. Nam quis nisi mi. Integer viverra convallis turpis, sed laoreet enim pellentesque vel. Proin eget hendrerit diam. Pellentesque auctor tincidunt placerat.</p>
+                            <h3>Accomodations & Modifications</h3>
+                            <ul>
+                                <li>Extra time (up to 1.5x) on assignments, projects, instruction, tests, and quizzes in reading, writing, math, social studies, and science</li>
+                                <li>Alternative time of day (morning) for math and science instruction/testing</li>
+                                <li>Access to a safe place for Student to store his things not in a locker (organization, storage of materials)</li>
+                                <li>Breaks when needed during all daily instruction, assignments and assessments in all content areas, to maintain focus or calm himself if
+                                he is becoming frustrated.</li>
+                                <li>Access to sensory or movement input or objects, including but not limited to noise reducing headphones and fidgets, for emotional
+                                regulation.</li>
+                                <li>Ensure home/school communication. Inform family regarding class topics that may be upsetting to Student.</li>
+                                <li>Excuse Student from emotionally disturbing instruction / topics / assemblies.</li>
+                                <li>Inform Student ahead of time about fire drills and different schedules.</li>
+                                <li>Break larger projects broken down into smaller, more manageable steps</li>
+                                <li>Visuals and checklist for multi-step projects and work completion</li>
+                                <li>Access to alternate technology for written communication - word prediction, speech-to-text software</li>
+                                <li>Assistive technology to complete work in all applicable classes.</li>
+                                <li>Copies of student / teacher notes</li>
+                                <li>Organizational system to manage belongings</li>
+                                <li>Assistance and encouragement from teachers in task initiation. Consider what is stopping Student from getting started on a particular
+                                task.</li>
+                                <li>Frequent checks for understanding</li>
+                                <li>Frequent prompts or re-directions</li>
+                                <li>Allow calculator use for math assessments and instruction when calculation is not being assessed.</li>
+                                <li>Limit the amount of homework</li>
+                                <li>Strategic seating for attention and interaction monitoring</li>
+                                <li>Peer partners for class assignment determined by teacher</li>
+                                <li>Explanation using concrete terminology of metaphors or jokes used during class time</li>
+                                <li>Provide example of completed work project</li>
+                                <li>Schedule cognitively challenging classes first and elective classes later in the day</li>
+                                <li>Elective classes should be flexible for purposes of self-regulation.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -131,14 +190,14 @@
     </main>
     <footer>
         <div class="flex-cont space-betw align-cent just-cent footer margin">
+            <p class="copy-brand">&copy; Smart SPED</p>
             <div class="flex-cont">
-                <a href="./" class="nav">Home</a>
-                <a href="" class="nav">Placeholder</a>
-                <a href="" class="nav">Placeholder</a>
-                <a href="" class="nav">Placeholder</a>
+                <a href="home.html" class="nav">Home</a>
+                <a href="about.html" class="nav">About</a>
+                <a href="contact.html" class="nav">Contact</a>
             </div>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
