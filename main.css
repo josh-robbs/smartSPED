@@ -46,8 +46,11 @@
 /*############
 # TYPOGRAPHY #
 ############*/
+p, ul {
+    line-height: 1.5;
+}
 
-h1, h2, h3 {
+h1, h2, h3, h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -57,10 +60,11 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 40px;
+    padding-bottom: 5px;
 }
 
-p, a {
+h6, p, a, li {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -155,6 +159,38 @@ a {
 
 .bottomCard {
     height: 200px;
+}
+
+/*############
+##  SPECIFIC CARD FORMATTING  ##
+############*/
+
+ul {
+    padding-left: 40px;
+}
+
+.goal-card p {
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.special-card a {
+    color: blue;
+    text-decoration: underline;
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+.update-entry {
+    padding: 15px 0;
+}
+
+.update-entry h5 {
+    padding-bottom: 5px;
+    font-style: italic;
 }
 
 /*############
